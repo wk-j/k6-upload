@@ -13,9 +13,9 @@ public class UploadController : ControllerBase
 {
 
     [HttpPost]
-    public IActionResult Upload([FromForm] Info info)
+    public IActionResult Upload([FromForm] Info info, [FromServices] ILogger<UploadController> logger)
     {
-        Console.WriteLine(info.File.Length);
+        logger.LogInformation($"{info.File.Name} {info.File.Length / 1024.0 / 1024.0}");
         return Ok();
     }
 }
