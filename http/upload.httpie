@@ -1,0 +1,4 @@
+http --form --offline
+  POST http://localhost:5170/api/upload/upload
+  File@input/input30x.bin
+  Id=1234
