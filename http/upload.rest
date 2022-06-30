@@ -1,0 +1,6 @@
+curl -X 'POST' \
+  'http://localhost:5170/api/Upload/Upload' \
+  -H 'accept: */*' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'Id=100' \
+  -F 'File=@README.md;type=text/markdown'
