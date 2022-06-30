@@ -9,9 +9,10 @@ k6 run k6/upload.js
 ```
 # 1M
 mkfile -n 1048576  input/input1m.bin
-
-# >1M
 mkfile -n 1048577  input/input1x.bin
+
+mkfile -n 31457280 input/input30m.bin
+mkfile -n 31457281 input/input30x.bin
 
 ls -alh  input
 ```

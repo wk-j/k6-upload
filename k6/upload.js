@@ -2,7 +2,7 @@ import http from 'k6/http';
 import { check } from 'k6';
 import { FormData } from 'https://jslib.k6.io/formdata/0.0.2/index.js';
 
-const img1 = open('../input/input1m.bin', 'b');
+const img1 = open('../input/input30x.bin', 'b');
 
 export default function () {
     const fd = new FormData();
