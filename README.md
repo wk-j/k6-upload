@@ -15,5 +15,8 @@ mkfile -n 1048577  input/input1x.bin
 mkfile -n 31457280 input/input30m.bin
 mkfile -n 31457281 input/input30x.bin
 
+mkfile -n 1m    input/1m.bin
+mkfile -n 30m   input/30m.bin
+
 ls -alh  input
 ```
